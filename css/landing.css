@@ -1,0 +1,47 @@
+/* Start Landing */
+
+.landing {
+    background-image: url(../image/moutain.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+
+.landing .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    width: 300px;
+    max-width: 100%;
+    line-height: 1.3;
+}
+
+.landing .intro-text h1 {
+    text-transform: capitalize;
+    color: var(--mainColor);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.landing .intro-text p {
+    color: var(--section-background);
+}
+
+@media (max-width: 768px) {
+    .landing .intro-text h1 {
+        font-size: 30px;
+    }
+    .landing .intro-text p {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
+
+
+/* End Landing */

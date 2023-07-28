@@ -1,0 +1,18 @@
+/* start footer */
+
+.footer {
+    text-align: center;
+    color: #fff;
+    padding: 30px 10px;
+    background-color: var(--secondary-color);
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.footer span {
+    font-weight: 800;
+    color: var(--mainColor);
+}
+
+
+/* End footer */

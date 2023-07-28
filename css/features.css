@@ -1,0 +1,39 @@
+/* start Features */
+
+.features {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #eee;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.features .feat {
+    text-align: center;
+    padding: 20px;
+}
+
+.features .feat i {
+    color: var(--mainColor);
+    font-size: 35px;
+}
+
+.features .feat h3 {
+    text-transform: capitalize;
+    font-weight: 800;
+    margin: 30px 0;
+    font-size: 17px;
+}
+
+.features .feat p {
+    color: var(--info-color);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+
+/* End Features */

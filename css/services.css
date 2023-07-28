@@ -1,0 +1,75 @@
+/* start services */
+
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.service-content .serve {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .service-content .serve {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.service-content .serve i {
+    font-size: 30px;
+    flex-basis: 60px;
+    color: var(--mainColor);
+}
+
+.service-content .serve .text {
+    flex: 1;
+}
+
+.service-content .serve .text h3 {
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.service-content .serve .text p {
+    color: #444;
+    letter-spacing: .5px;
+    line-height: 1.5;
+}
+
+.service-content .image {
+    position: relative;
+    text-align: center;
+}
+
+.service-content .image::before {
+    position: absolute;
+    content: '';
+    top: -50px;
+    right: -25px;
+    width: 100px;
+    height: calc(100% + 100px);
+    background-color: var(--secondary-color);
+    z-index: -1;
+}
+
+.service-content .image img {
+    width: 260px;
+    height: 260px;
+}
+
+@media (max-width: 1199px) {
+    .image-column {
+        display: none;
+    }
+}
+
+
+/* End services */

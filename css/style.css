@@ -1,0 +1,127 @@
+/* start global rules */
+
+:root {
+    --mainColor: #10cab7;
+    --secondary-color: #2c4755;
+    --section-background: #f6f6f6;
+    --section-padding: 60px;
+    --info-color: #777;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.parent {
+    background-color: #eee;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 730px;
+    }
+}
+
+
+/* medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+/* End global rules */
+
+
+/* start components */
+
+.special-header {
+    font-size: 100px;
+    color: #ddd;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -4px;
+    user-select: none;
+}
+
+.special-header+p {
+    margin-top: -30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .special-header {
+        font-size: 60px;
+        letter-spacing: -1px;
+    }
+    .special-header+p {
+        margin-top: -20px;
+        font-size: 15px;
+    }
+}
+
+
+/* End components */
+
+
+/* scroll  */
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--mainColor);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    opacity: .7;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--secondary-color);
+}
